@@ -3,6 +3,8 @@
 
 //_Import:
 @import "reset.scss";
+@import "functions.scss";
+@import "accordion-1.scss";
 
 [class*="__container"] {
   max-width: 1280px;

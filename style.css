@@ -14,6 +14,48 @@ a {
   text-decoration: none;
 }
 
+.accordion-1 {
+  padding: 3.125rem 0px;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  color: #121214;
+}
+.accordion-1__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0px 0px 2.5rem 0px;
+}
+.accordion-1__body {
+  display: flex;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info__icon {
+  margin: 0px 0px 1.5625rem 0px;
+}
+.info__title {
+  font-size: 1.5rem;
+  margin: 0px 0px 0.9375rem 0px;
+  font-weight: 600;
+}
+.info__text {
+  text-align: center;
+  margin: 0px 0px 1.875rem 0px;
+}
+.info__btn {
+  border-radius: 9px;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  padding: 0px 1.875rem;
+  color: #ffffff;
+  background-color: #037e8c;
+}
+
 [class*=__container] {
   max-width: 1280px;
   margin: 0 auto;
