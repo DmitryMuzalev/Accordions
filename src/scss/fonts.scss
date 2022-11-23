@@ -1,0 +1,27 @@
+//_Fonts:
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../src/fonts/ProximaNova-Regular.eot");
+  src: local("../../src/fonts/Proxima Nova Regular"),
+    local("../../src/fonts/ProximaNova-Regular"),
+    url("../../src/fonts/ProximaNova-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../src/fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../../src/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../src/fonts/ProximaNova-Bold.eot");
+  src: local("../../src/fonts/Proxima Nova Bold"),
+    local("../../src/fonts/ProximaNova-Bold"),
+    url("../../src/fonts/ProximaNova-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../src/fonts/ProximaNova-Bold.woff") format("woff"),
+    url("../../src/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

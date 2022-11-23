@@ -16,6 +16,20 @@ a {
 }
 
 @font-face {
+  font-family: "Proxima Nova";
+  src: url("../../src/fonts/ProximaNova-Regular.eot");
+  src: local("../../src/fonts/Proxima Nova Regular"), local("../../src/fonts/ProximaNova-Regular"), url("../../src/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/ProximaNova-Regular.woff") format("woff"), url("../../src/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../../src/fonts/ProximaNova-Bold.eot");
+  src: local("../../src/fonts/Proxima Nova Bold"), local("../../src/fonts/ProximaNova-Bold"), url("../../src/fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../../src/fonts/ProximaNova-Bold.woff") format("woff"), url("../../src/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
   font-family: "icon-font";
   src: url("../../src/fonts/icon-font.eot?k2411t");
   src: url("../../src/fonts/icon-font.eot?k2411t#iefix") format("embedded-opentype"), url("../../src/fonts/icon-font.ttf?k2411t") format("truetype"), url("../../src/fonts/icon-font.woff?k2411t") format("woff"), url("../../src/fonts/icon-font.svg?k2411t#icon-font") format("svg");
@@ -157,6 +171,80 @@ a {
 }
 .info__btn:hover {
   background-color: #01a6b9;
+}
+
+.accordion-2 {
+  padding: 3.125rem 0;
+  font-family: "Proxima Nova";
+  font-weight: normal;
+  background-color: #282b38;
+  color: #ffffff;
+}
+.accordion-2__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.accordion-2__body {
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+.accordion-2__title {
+  position: relative;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0px 0px 0.9375rem 0px;
+  margin: 0px 0px 3.125rem 0px;
+}
+.accordion-2__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.125rem;
+  width: 5.3125rem;
+  background-color: #e58d35;
+}
+.accordion-2__item {
+  border: 0.0625rem solid #3a444e;
+  border-radius: 0.625rem;
+  transition: background-color 0.5s ease-out;
+  padding: 1.25rem 2.1875rem;
+}
+.accordion-2__item.active {
+  background-color: #ffffff;
+}
+.accordion-2__item.active .accordion-2__question {
+  color: #282b38;
+}
+.accordion-2__item.active .accordion-2__question span {
+  transform: rotate(-90deg);
+  color: #e58d35;
+}
+.accordion-2__item.active .accordion-2__answer {
+  margin: 1.25rem 0px 0px 0px;
+}
+.accordion-2__question {
+  font-weight: bold;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+.accordion-2__question span {
+  font-size: 1.6875rem;
+  transition: all 0.5s ease-out;
+}
+.accordion-2__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  color: #282b38;
 }
 
 [class*=__container] {
