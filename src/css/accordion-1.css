@@ -1,0 +1,44 @@
+.accordion-1 {
+  padding: rem(50) 0px;
+  font-size: rem(14);
+  font-family: "Montserrat", sans-serif;
+  color: #121214;
+}
+.accordion-1__title {
+  font-size: rem(36);
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0px 0px rem(40) 0px;
+}
+.accordion-1__body {
+  display: flex;
+}
+.accordion-1__items-list {
+  border: 1px solid red;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info__icon {
+  margin: 0px 0px rem(25) 0px;
+}
+.info__title {
+  font-size: rem(24);
+  margin: 0px 0px rem(15) 0px;
+  font-weight: 600;
+}
+.info__text {
+  text-align: center;
+  margin: 0px 0px rem(30) 0px;
+}
+.info__btn {
+  border-radius: 9px;
+  height: rem(45);
+  line-height: rem(45);
+  padding: 0px rem(30);
+  color: #ffffff;
+  background-color: #037e8c;
+}
