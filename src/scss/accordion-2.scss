@@ -63,6 +63,7 @@
     align-items: center;
     justify-content: space-between;
     gap: rem(10);
+    cursor: pointer;
     span {
       font-size: rem(27);
       transition: all 0.5s ease-out;

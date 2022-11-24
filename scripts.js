@@ -36,14 +36,13 @@ ACCORDION_2_QUESTIONs.forEach((question) => {
     const currentItem = currentQuestion.parentNode;
     const currentAnswer = currentQuestion.nextElementSibling;
 
-    ACCORDION_2.querySelectorAll(".accordion-2__item").forEach((item) => {
-      item.classList.remove("active");
-    });
-    ACCORDION_2.querySelectorAll(".accordion-2__answer").forEach((answer) => {
-      answer.style.maxHeight = 0;
-    });
-
     if (!currentItem.classList.contains("active")) {
+      ACCORDION_2.querySelectorAll(".accordion-2__item").forEach((item) => {
+        item.classList.remove("active");
+      });
+      ACCORDION_2.querySelectorAll(".accordion-2__answer").forEach((answer) => {
+        answer.style.maxHeight = 0;
+      });
       currentItem.classList.add("active");
       currentAnswer.style.maxHeight = currentAnswer.scrollHeight + "px";
     } else {
