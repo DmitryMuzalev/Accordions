@@ -51,3 +51,33 @@ ACCORDION_2_QUESTIONs.forEach((question) => {
     }
   });
 });
+
+//_Accordion-3:
+const ACCORDION_3 = document.querySelector(".accordion-3");
+const ACCORDION_3_QUESTIONs = ACCORDION_3.querySelectorAll(
+  ".accordion-3__question"
+);
+
+ACCORDION_3_QUESTIONs.forEach((q) => {
+  q.addEventListener("click", function (e) {
+    e.preventDefault();
+    const question = e.currentTarget;
+    const item = question.parentNode;
+    const answer = question.nextElementSibling;
+
+    if (!item.classList.contains("active")) {
+      ACCORDION_3.querySelectorAll(".accordion-3__item").forEach((i) => {
+        i.classList.remove("active");
+      });
+      ACCORDION_3.querySelectorAll(".accordion-3__answer").forEach((a) => {
+        a.style.maxHeight = null;
+      });
+      item.classList.add("active");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      item.classList.remove("active");
+      answer.style.maxHeight = null;
+    }
+    console.log(answer);
+  });
+});

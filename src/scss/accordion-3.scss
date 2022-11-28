@@ -28,7 +28,8 @@
         }
       }
       .accordion-3__answer {
-        padding-bottom: rem(15);
+        box-sizing: content-box;
+        padding-bottom: rem(20);
         margin: rem(20) 0px 0px 0px;
         border-bottom: 4px solid #bd7048;
       }
@@ -46,6 +47,7 @@
     line-height: 1.2;
     span {
       font-size: rem(30);
+      transition: all 0.5s ease-out;
     }
   }
 
@@ -54,5 +56,6 @@
     overflow: hidden;
     line-height: 1.5;
     padding: 0px rem(25);
+    transition: all 0.5s ease-out;
   }
 }
